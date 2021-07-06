@@ -8,6 +8,9 @@ const Counter = () => {
 
         setCounter(counter + n);
     }
+    const refresh = ():void => {
+        setCounter(0)
+    }
     return (
         <div className="mt-5">
             <h3>Counter:</h3>
@@ -15,7 +18,7 @@ const Counter = () => {
             <button className="btn btn-primary" onClick={ () => incrementar(1) }>+1</button>
             <button className="btn btn-primary" onClick={ () => incrementar(2) }>+2</button>
             <button className="btn btn-danger" onClick={ () => incrementar(-1) }>-1</button>
-            <button className="btn btn-success"onClick={ () => incrementar(0) }>refresh</button>
+            <button className="btn btn-success"onClick={ refresh }>refresh</button>
             <hr/>
         </div>
     )
