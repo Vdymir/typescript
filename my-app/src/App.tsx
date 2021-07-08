@@ -2,6 +2,7 @@ import Counter from './components/Counter';
 import Usario from './components/Usario';
 import Timerfather from './components/Timerfather'
 import ContadorReduacer from './components/ContadorReduacer';
+import Formulario from './components/Formulario';
 function App() {
   return (
     <>
@@ -13,6 +14,8 @@ function App() {
       <Timerfather />
       <hr />
       <ContadorReduacer />
+      <hr />
+      <Formulario />
     </>
   );
 }
